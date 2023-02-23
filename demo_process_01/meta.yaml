@@ -8,6 +8,8 @@ target:
    description: This is my first data mart for POC demo. In real life you shoud put here a full description of what table means
    columns:
     - name: product_id
-      source: customers.customer_id
+      source: products.product_id
+    - name: category_name
+      source: categories.category_name
     - name: my_new_column
       description: This is my new column. It this is not a simple lookup from source table then I should provide a full business description of the column here     

@@ -6,8 +6,10 @@ import pandas
 
 result_df.head()
 
-result_df['my_new_column'] = result_df['mortgage_due'] + result_df['credit_card_due']
+result_df['my_new_column'] = ' My ' + result_df['category_name']
 
 result_df.head()
 
 result_df.to_parquet('~/data/my_semi_table1.parquet')
+
+
