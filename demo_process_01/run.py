@@ -1,8 +1,8 @@
 import pandas
 
-# %sql memory
+# %sql dwh
 
-# result_df = %sql select * from '~/sample_data/credit_history.parquet' limit 100;
+# result_df = %sql select product_id, category_name from products p left join categories c on p.category_id = c.category_id;
 
 result_df.head()
 
