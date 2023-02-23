@@ -4,7 +4,7 @@ source:
   - customers
   - customer_demographics
 target:
- - name: semi_table1 
+ - name: my_semi_table1 
    description: This is my first data mart for POC demo. In real life you shoud put here a full description of what table means
    columns:
     - name: customer_id
