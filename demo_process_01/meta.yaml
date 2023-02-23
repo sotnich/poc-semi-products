@@ -1,13 +1,13 @@
 author: sergey.sotnichenko
 description: This is my first data mart for POC demo 
 source:
-  - payment_analytics.bank
-  - payment_transaction.outgoing_payment
+  - customers
+  - customer_demographics
 target:
  - name: semi_table1 
    description: This is my first data mart for POC demo. In real life you shoud put here a full description of what table means
    columns:
-    - name: bank_id
-      source: payment_analytics.bank.bank_id
+    - name: customer_id
+      source: customers.bancustomer_id
     - name: my_new_column
       description: This is my new column. It this is not a simple lookup from source table then I should provide a full business description of the column here 
